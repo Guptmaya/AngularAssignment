@@ -1,0 +1,25 @@
+
+<div class="grid-container">
+    <div class="left">
+        <ul>
+            <li *ngFor="let item of mybooks; let i=index" (click)="onClickMe(i)">
+                <div *ngIf="goodToGo[i]">
+               <img src="{{item.bimage}}" class="image">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class = "right">
+        <ul>
+            <li *ngFor="let item of mybooks; let i=index" (click)="onClickMe(i)">
+               <div class="background"> {{item.bname}}</div>
+                <div *ngIf="goodToGo[i]">
+                <strong>Book Name:</strong>{{item.bname}}<br>
+                <strong>Author:</strong> {{item.bauthor}}<br> 
+                <strong>Genre:</strong> {{item.bgenre}}<br>
+                <strong>Year Published:</strong> {{item.byearPub}}<br> 
+                </div>
+            </li>
+        </ul>
+    </div>    
+</div>

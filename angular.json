@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "guptMayaA3"
+    }
+  },
+  "defaultProject": "guptMayaA3",
+  "cli": {
+    "analytics": false
+  }
 }
